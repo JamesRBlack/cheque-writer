@@ -1,0 +1,17 @@
+  <div class="p-grid p-col-12">
+    <form [formGroup]="inputForm" (ngSubmit)="onSubmit()" class="p-grid p-col-12">
+      <p-panel class="p-col-12" header="User Information">
+        <div class="p-grid p-col-12">
+          <label class="p-col-2" for="name">Name: </label>
+          <input class="p-col-3" autocomplete="off" appAlphabet formControlName="name" id="name" type="text" pInputText/>
+          <span class="p-col-1"></span>
+          <label class="p-col-2" for="amount">Dollar Amount: </label>
+          <input class="p-col-3" autocomplete="off" appDigitsOnly formControlName="value" id="amount" type="text" pInputText/>
+        </div>
+      </p-panel>
+      <ng-container class="p-grid">
+        <p-button type="submit" [disabled]="canProceedToNextPage" class="p-col-6" label="Next"></p-button>
+        <p-button type="button" class="p-col-6" (onClick)="resetValues()" style="text-align:right" label="Reset"></p-button>
+      </ng-container>
+    </form>
+  </div>

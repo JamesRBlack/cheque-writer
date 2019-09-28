@@ -1,0 +1,11 @@
+<div class="p-grid p-col-12">
+<p-sidebar class="p-col-2" [style]="{width: '15%', backgroundColor: '#20272A'}" [visible]="true">
+    <h2 class="menu-header">James Black</h2>
+    <h3 class="menu-header">Cheque Writer</h3>
+  <button pButton type="button" label="Home" (click)="navigateToHome()" class="ui-button-info" style="width: 100%; border-color: #080808; background-color: #080808;"></button>
+</p-sidebar>
+  <div class="p-col-10">
+    <p-steps class="p-col-12" [activeIndex]="activeIndex" [model]="items"></p-steps>
+  <router-outlet (activate)="indexEventHandler($event)"></router-outlet>
+  </div>
+</div>

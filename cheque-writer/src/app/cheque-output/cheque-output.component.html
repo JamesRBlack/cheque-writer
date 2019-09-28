@@ -1,0 +1,18 @@
+<div class="p-grid p-col-12">
+  <div class="p-grid p-col-12">
+    <p-panel class="p-col-12" header="Cheque Output">
+      <div class="p-grid p-col-12">
+        <label class="p-col-2">Name: </label>
+        <label class="p-col-3">{{outPutModel.name}}</label>
+        <span class="p-col-1"></span>
+      </div>
+      <div class="p-grid p-col-12">
+        <label class="p-col-2">Dollar Amount: </label>
+        <label class="p-col-3">{{outPutModel.moneyValue}}</label>
+      </div>
+    </p-panel>
+    <ng-container class="p-grid">
+      <p-button (onClick)="navigateBack()" class="p-col-6" label="Back"></p-button>
+    </ng-container>
+  </div>
+</div>
