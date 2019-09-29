@@ -12,12 +12,10 @@ Core Dependencies include Angular 8.3.6 and PrimeNG Angular component library.
 
 4. The Single Page Application should be served on the default port of 4200 at http://localhost:4200/  
 
-## Design Choices
-
-###Design Patterns
+##Design Patterns
 Dependency Injection and Inversion of Control was used in app.component.js to inject the router service into the base component, allowing the user to navigate to different components via the routes defined in app.module.ts
 
-###Styling
+##Styling
 PrimeNg was used to include reusable components within the app to help build it out quickly.
 PrimeFlex was also used to implement the 12 column grid commonly used in popular frameworks like bootstrap. This helps scale the UI when it on a smaller screen size, while keeping everything in proportion to each other.
 
