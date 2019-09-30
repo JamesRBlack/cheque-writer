@@ -42,9 +42,9 @@ export class HomeComponent implements OnInit {
     const whole = this.convertValueToWords(numbers[0]);
     if (numbers.length === 2) {
       const fraction = this.convertValueToWords(numbers[1]);
-      wordValue = whole + ' AND ' + fraction + ' CENTS';
+      wordValue = whole + ' DOLLARS' + ' AND ' + fraction + ' CENTS';
     } else {
-      wordValue = whole;
+      wordValue = whole + ' DOLLARS';
     }
     this.router.navigate(['/cheque-output'], {
       state: {
